@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".fragments.DashBoardFragment">
+
+    <!-- Card 1 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_feature_1"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_feature_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bs"
+                android:scaleType="centerCrop"
+                android:contentDescription="Feature 1"/>
+
+            <TextView
+                android:paddingEnd="5dp"
+                android:id="@+id/tv_feature_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bird Species"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignEnd="@id/iv_feature_1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_feature_2"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_toEndOf="@id/card_feature_1"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_feature_2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/bso"
+                android:scaleType="centerCrop"
+                android:contentDescription="Feature 2"/>
+
+            <TextView
+                android:paddingEnd="5dp"
+                android:id="@+id/tv_feature_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bird Sounds"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignEnd="@id/iv_feature_2"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 3 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_feature_3"
+        android:layout_width="180dp"
+        android:layout_height="185dp"
+        android:layout_below="@id/card_feature_1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_feature_3"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:src="@drawable/hb"
+                android:scaleType="centerCrop"
+                android:contentDescription="Feature 3"/>
+
+            <TextView
+                android:paddingEnd="5dp"
+                android:id="@+id/tv_feature_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habitats"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignEnd="@id/iv_feature_3"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 4 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_feature_4"
+        android:layout_width="190dp"
+        android:layout_height="205dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/card_feature_2"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_feature_4"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bf"
+                android:contentDescription="Feature 4"/>
+
+            <TextView
+                android:paddingEnd="5dp"
+                android:id="@+id/tv_feature_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feeding Tips"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignEnd="@id/iv_feature_4"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 5 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_feature_5"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/card_feature_3"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_feature_5"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="Feature 5"
+                android:scaleType="fitXY"
+                android:src="@drawable/bwt" />
+
+            <TextView
+                android:id="@+id/tv_feature_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/iv_feature_5"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+
+                android:text="Bird Watching Tips"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 6 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_feature_6"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/card_feature_5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_feature_6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bc"
+                android:contentDescription="Feature 6"/>
+
+            <TextView
+                android:paddingEnd="5dp"
+                android:id="@+id/tv_feature_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bird Conservation"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignEnd="@id/iv_feature_6"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 7 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_feature_7"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        android:layout_toEndOf="@id/card_feature_6"
+        android:layout_below="@id/card_feature_5"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_feature_7"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bmf"
+                android:contentDescription="Feature 7"/>
+
+            <TextView
+                android:paddingEnd="5dp"
+                android:id="@+id/tv_feature_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bird Migration Facts"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignEnd="@id/iv_feature_7"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

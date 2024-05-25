@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashfragment"
+        android:title="DashBoard"
+        android:icon="@drawable/dashboard"/>
+    <item
+        android:id="@+id/searchfragment"
+        android:title="Search"
+        android:icon="@drawable/search"/>
+    <item
+        android:id="@+id/identifyfragment"
+        android:title="Identify"
+        android:icon="@drawable/identify"/>
+    <item
+        android:id="@+id/likefragment"
+        android:title="Like"
+        android:icon="@drawable/likes"/>
+    <item
+        android:id="@+id/aboutusfragment"
+        android:title="About Us"
+        android:icon="@drawable/aboutus"/>
+</menu>
